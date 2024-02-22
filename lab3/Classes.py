@@ -1,4 +1,4 @@
-# 1)
+
 # class getstring:
 #   def __init__(self):
 #     self.str1 = ""
@@ -10,7 +10,7 @@
 # str1.get_string()
 # str1.print_string()
 
-# 2)
+# # 2)
 # from math import *
 # class Shape:
 #   def __init__(self):
@@ -39,7 +39,7 @@
 # nRectangle = Rectangle()
 # nRectangle.area()
 
-# 4)
+# # 4)
 # from math import *
 # class Point():
 #   def __init__(self):
@@ -89,6 +89,18 @@
 # a.display()
 
 # 6)
-# numbers = list(map(int, input().split()))
-# result = list(filter(lambda x: all(x % i != 0 for i in range(2, x)), numbers))
-# print(result)
+numbers = list(map(int, input().split()))
+result = list(filter(lambda x: all(x % i != 0 for i in range(2, x)), numbers))
+print(result)
+
+class Person:
+    def  __init__(self, name, age):
+      self.name = name
+      self.age = age
+
+    def __str__(self):
+      return f"{self.name}({self.age})"
+
+p1 = Person("John", 36)
+
+print(p1)

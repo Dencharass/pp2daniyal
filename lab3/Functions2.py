@@ -120,23 +120,23 @@ movies = [
 # print(result(movies))
 
 # 5)
-# def categ(movies,cat_name):
-#     out_list=[]
-#     for i in movies:
-#         curr_cat=i['category']
-#         if cat_name.lower()==curr_cat.lower():
-#             out_list.append(i)
-#     return out_list
-# def imdb(movies):
-#     avg_score=0
-#     tot_movies=len(movies)
-#     for i in movies:
-#         avg_score=avg_score+i['imdb']
-#     avg_score=avg_score/tot_movies
-#     return avg_score
-# def result(movies, cotegor):
-#     movie = categ(movies,cotegor)
-#     score = imdb(movie)
-#     print(score)
-# cotegor = input()
-# result(movies,cotegor)
+def categ(movies,cat_name):
+    out_list=[]
+    for i in movies:
+        curr_cat=i['category']
+        if cat_name.lower()==curr_cat.lower():
+            out_list.append(i)
+    return out_list
+def imdb(movies):
+    avg_score=0
+    tot_movies=len(movies)
+    for i in movies:
+        avg_score=avg_score+i['imdb']
+    avg_score=avg_score/tot_movies
+    return avg_score
+def result(movies, cotegor):
+    movie = categ(movies,cotegor)
+    score = imdb(movie)
+    print(score)
+cotegor = input()
+result(movies,cotegor)

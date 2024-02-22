@@ -95,13 +95,13 @@
 # print(V)
 
 # 10)
-# def duplicates(mylist):
-#     mylist = list(dict.fromkeys(mylist))
-#     print(mylist)
-# line=input()
-# words=line.split(' ')
-# numbers=[str(i) for i in words]
-# duplicates(numbers)
+def duplicates(mylist):
+    mylist = list(dict.fromkeys(mylist))
+    print(mylist)
+line=input()
+words=line.split(' ')
+numbers=[str(i) for i in words]
+duplicates(numbers)
 
 # 11)def palindrome(a):
 #     txt= a[::-1]
